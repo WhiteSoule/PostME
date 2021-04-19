@@ -8,5 +8,5 @@ yarn global add @vue/cli
 ```
 If you have vue cli installed run :
 ```sh
-vue create "postme
+vue create postme
 ```
