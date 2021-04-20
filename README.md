@@ -33,5 +33,6 @@ yarn add --dev @cucumber/cucumber
 ``
 ## create features
 
-Let's start by creating a "test" folder in our application
+Let's start by creating a "test" folder in our application.
+
 In there 
