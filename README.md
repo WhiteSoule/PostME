@@ -16,7 +16,7 @@ Cucumber  uses the Gherkin language to describe the scenarios in a feature file.
 The use cases will be structured into Given, When and Then keywords. 
 For example:
 Given a user named Tomer registered with email "nai@uni.lu" and password "nai"
-And Tomer enters his credential 
+And Tomer enters his credential \n
 When Tomer clicks on submit button
 Then Tomer is logged in
 
