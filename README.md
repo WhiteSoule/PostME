@@ -31,8 +31,50 @@ npm install --save-dev @cucumber/cucumber
 #OR
 yarn add --dev @cucumber/cucumber
 ``
+## install cypress
+For this project we also want to install cypress, which will help us to run testing steps along with cucumber.
+For this you can run this in your terminal under the project folder:
+``sh
+npm install cypress
+#OR
+yarn add cypress --dev
+``
+### open cypress
+Open cypress with: 
+``sh
+npx cypress open
+#OR
+yarn run cypress open
+`` 
+This will open cypress testing UI and will also add some important folders to configure cypress.
+### cypress plugin
+Since we want cypress and cucumber to work together we need to add some plugins for cypress. Like that it can run cucumber scenarios with cypress testing automation.
+``sh
+npm install --save-dev cypress-cucumber-preprocessor
+``
+Then you will need to add, to your plugins (cypress/plugins/index.js) :
+``sh
+const cucumber = require('cypress-cucumber-preprocessor').default
+
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+}
+``
+In the cypress.json file you will need to add this: 
+``sh
+{
+  "testFiles": "**/*.feature"
+}
+``
+And finally you will need to add this to the package.json file:
+``sh
+"cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": true
+}
+``
+
 ## create features
 
-Let's start by creating a "test" folder in our application.
+Let's start by creating a feature file in the cypress/integration folder.
 
-In there 
+In there  create a login.feature file and a login folder.
