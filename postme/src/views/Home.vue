@@ -1,7 +1,21 @@
+/* eslint-disable prettier/prettier */
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    
+  <div class="Sign-in">
+    <form>
+      <div>
+        <input id="floatingInput" type="email" placeholder="name@example.com" />
+        <label for="floatingInput">Email adress</label>
+      </div>
+      <div>
+        <input
+          id="floatingPassword"
+          type="password"
+          placeholder="name@example.com"
+        />
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
   </div>
 </template>
 
@@ -10,8 +24,6 @@
 
 export default {
   name: "Home",
-  components: {
-    
-  },
+  components: {},
 };
 </script>
