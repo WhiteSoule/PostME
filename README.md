@@ -2,7 +2,7 @@
 Tutorial to learn about BDD development (MileStone)
 
 1) create empty project (packages installation when needed)
-2) write first feature files
+2) write feature files
 3) write step definitions and see test fail
 4) prepare the structure of the application 
   - the different pages and navigation bar
