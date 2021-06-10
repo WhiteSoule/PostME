@@ -17,13 +17,6 @@
               >Register</router-link
             >
           </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="javascript:void(0)" @click="handleClick" class="nav-link"
-              >Logout</a
-            >
-          </li>
           <li class="nav-item">
             <router-link
               to="/profile"
@@ -41,11 +34,5 @@
 <script>
 export default {
   name: "Navbar",
-  methods: {
-    handleClick() {
-      localStorage.removeItem("token");
-      this.$router.push("/");
-    },
-  },
 };
 </script>

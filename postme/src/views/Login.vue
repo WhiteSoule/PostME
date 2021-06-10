@@ -53,11 +53,10 @@ export default {
       });
       if (response.status == 201) {
         console.log(response);
-        localStorage.setItem("token", response.data.data.token);
         this.$router.push("/profile");
         console.log(response);
       } else {
-        console.log("error here!");
+        console.log(response);
         error.textContent = response.data.error;
       }
     },

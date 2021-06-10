@@ -55,7 +55,7 @@ export default {
         console.log(response.data.email);
         this.$router.push("/login");
       } else {
-        console.log("error here!");
+        console.log(response);
         error.textContent = response.data.error;
       }
     },
