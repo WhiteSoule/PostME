@@ -52,7 +52,7 @@ export default {
         password: this.password,
       });
       if (response.status == 201) {
-        console.log(response.data.email);
+        console.log(response.data);
         this.$router.push("/login");
       } else {
         console.log(response);
