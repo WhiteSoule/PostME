@@ -1,16 +1,16 @@
-Feature: logging in
+Feature: register
 
     Background: go on right page
         Given I am on the landing page
-        And I go to Login page
+        And I go to Register page
 
-    Scenario: login with correct credential
+    Scenario: register with valid credential
 
-        And I enter credentials
+        And I enter valid credentials
         When I click on submit button
-        Then I should land on profile page
+        Then I should land on login page
 
-    Scenario: login with incorrect credential
+    Scenario: register with incorrect credential
         And I enter incorrect credentials
         When I click on submit button
         Then I should see an error message
