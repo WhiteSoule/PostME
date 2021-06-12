@@ -32,4 +32,4 @@ For the tesing process we make use of:
 8) test the application and see if everything works fine (Conclusion)
 
 # First Step
-You can now go check out the first branch of this tutorial 1-Get_Started
+You can now go check out the first branch of this tutorial 01-Get_Started
