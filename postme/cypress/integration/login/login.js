@@ -1,7 +1,6 @@
 const { Given, When, Then } = require("cypress-cucumber-preprocessor/steps");
 
 var valid;
-var e = new Error("Error here");
 Given("I am on the landing page", () => {
   cy.visit("/");
   cy.contains("Welcome");
