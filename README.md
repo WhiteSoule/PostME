@@ -40,4 +40,4 @@ In the components folder we will find the HelloWorld component. We will delete i
 Since we deleted the HelloWorld components in the views folder, in the Home.vue file delete the HelloWorld tag aswell as the import and the component from the export part.
 
 We can leave the application like this for now.
-You can now checkout the branch 2-Introduction_to_BDD
+You can now checkout the branch 02-Introduction_to_BDD
