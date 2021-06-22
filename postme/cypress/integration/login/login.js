@@ -1,3 +1,5 @@
+/* eslint-disable no-undef *//* eslint-disable prettier/prettier */
+
 const { Given, When, Then } = require("cypress-cucumber-preprocessor/steps");
 
 var valid;

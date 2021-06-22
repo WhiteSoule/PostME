@@ -1,3 +1,5 @@
+/* eslint-disable no-undef *//* eslint-disable prettier/prettier */
+
 const { Given, When, Then, And } = require("cypress-cucumber-preprocessor/steps");
 
 Given("I am on the Profile page", () => {
