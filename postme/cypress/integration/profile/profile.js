@@ -3,7 +3,7 @@
 const { Given, When, Then, And } = require("cypress-cucumber-preprocessor/steps");
 
 Given("I am on the Profile page", () => {
-    cy.visit("/profile");
+    cy.visit("/#/profile");
     cy.contains("Welcome to your Profile");
 });
 
